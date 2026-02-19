@@ -6,7 +6,7 @@
     
     <!-- SEO -->
     <title>Компьютерный мастер Никита | Ремонт компьютеров и ноутбуков в Орске</title>
-    <meta name="description" content="Ремонт компьютеров и ноутбуков в Орске. Мастер Никита, опыт 10 лет. Срочный выезд, диагностика от 500₽, гарантия. Работаю 24/7.">
+    <meta name="description" content="Ремонт компьютеров и ноутбуков в Орске. Мастер Никита, опыт 10 лет. Срочный выезд, диагностика от 500₽, гарантия. Принимаем с 08:00 до 22:00.">
     <meta name="geo.region" content="RU-ORE">
     <meta name="geo.placename" content="Орск">
     
@@ -15,6 +15,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Фавиконы для всех устройств -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     
     <style>
         * {
@@ -193,6 +199,17 @@
             border: 1px solid var(--accent);
         }
 
+        .work-hours {
+            display: inline-block;
+            background: var(--accent-light);
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 40px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-left: 12px;
+        }
+
         .hero {
             padding: 60px 0;
             background: linear-gradient(145deg, #ffffff 0%, var(--bg) 100%);
@@ -244,6 +261,7 @@
             display: flex;
             gap: 16px;
             flex-wrap: wrap;
+            align-items: center;
         }
 
         .hero-stats {
@@ -380,13 +398,7 @@
             border: 1px solid var(--border);
             border-radius: 20px;
             padding: 24px;
-            transition: all 0.2s;
-        }
-
-        .price-item:hover {
-            border-color: var(--accent);
-            background: var(--accent-light);
-            transform: scale(1.02);
+            transition: none; /* Убираем анимацию при наведении */
         }
 
         .price-item h4 {
@@ -646,12 +658,6 @@
             }
         }
     </style>
-    <!-- Фавиконы для всех устройств -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 
@@ -668,7 +674,8 @@
   },
   "telephone": "+7 912 355-20-43",
   "priceRange": "от 200₽ до 5000₽",
-  "areaServed": "Орск"
+  "areaServed": "Орск",
+  "openingHours": "Mo-Su 08:00-22:00"
 }
 </script>
 
@@ -686,6 +693,7 @@
             <a href="#about" class="nav-link">Опыт 10 лет</a>
             <a href="#contact" class="nav-link">Контакты</a>
             <a href="tel:+79123552043" class="phone-header">8-912-355-20-43</a>
+            <span class="work-hours">с 08:00 до 22:00</span>
         </nav>
     </div>
 </header>
@@ -698,11 +706,12 @@
                 <i class="fas fa-bolt"></i> Срочный ремонт в Орске
             </div>
             <h1>Компьютерный мастер<br>Никита</h1>
-            <p class="hero-text">Решу любую проблему с ПК или ноутбуком. Работаю 24/7, выезд за 2-3 часа. Честная цена до начала работ. Гарантия 30 дней.</p>
+            <p class="hero-text">Решу любую проблему с ПК или ноутбуком. Принимаю заявки с 08:00 до 22:00. Выезд за 2-3 часа. Честная цена до начала работ. Гарантия 30 дней.</p>
             
             <div class="hero-actions">
                 <a href="tel:+79123552043" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Позвонить</a>
                 <a href="https://t.me/fogle2829" class="btn btn-tg" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
+                <span class="work-hours">с 08:00 до 22:00</span>
             </div>
             
             <div class="hero-stats">
@@ -715,8 +724,8 @@
                     <span class="stat-label">клиентов</span>
                 </div>
                 <div>
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-label">на связи</span>
+                    <span class="stat-number">08:00-22:00</span>
+                    <span class="stat-label">по графику</span>
                 </div>
             </div>
         </div>
@@ -914,13 +923,13 @@
         <div class="contact-card">
             <div class="contact-info">
                 <h3>Свяжитесь со мной</h3>
-                <p class="contact-desc">Позвоните или напишите в Telegram прямо сейчас — я отвечу в приоритетном порядке.</p>
+                <p class="contact-desc">Позвоните или напишите в Telegram в рабочее время (с 08:00 до 22:00) — я отвечу в приоритетном порядке.</p>
                 
                 <div class="contact-item">
                     <i class="fas fa-phone-alt"></i>
                     <div>
                         <strong>8-912-355-20-43</strong>
-                        <span>Звоните, работаю 24/7</span>
+                        <span>Принимаю звонки с 08:00 до 22:00</span>
                     </div>
                 </div>
                 
@@ -952,7 +961,7 @@
                         <input type="text" placeholder="Ваше имя">
                     </div>
                     <div class="form-group">
-                        <input type="tel" placeholder="Телефон" value="+7 912 355-20-43">
+                        <input type="tel" placeholder="Ваш телефон">
                     </div>
                     <div class="form-group">
                         <textarea placeholder="Опишите проблему..." rows="4"></textarea>
@@ -978,7 +987,7 @@
             </div>
             <div style="display: flex; align-items: center; gap: 12px;">
                 <i class="fas fa-clock" style="color: var(--accent); font-size: 28px;"></i>
-                <span style="font-weight: 600;">24/7 на связи</span>
+                <span style="font-weight: 600;">с 08:00 до 22:00</span>
             </div>
         </div>
     </div>
@@ -988,7 +997,7 @@
 <footer class="footer">
     <div class="container">
         <p>© 2024 Компьютерный мастер Никита | Ремонт компьютеров и ноутбуков в Орске</p>
-        <p style="margin-top: 12px;">Работаю 24/7 | Выезд по городу | Честные цены</p>
+        <p style="margin-top: 12px;">Принимаю заявки с 08:00 до 22:00 | Выезд по городу | Честные цены</p>
     </div>
 </footer>
 
@@ -1021,6 +1030,4 @@
 <!-- /Yandex.Metrika counter -->
 
 </body>
-
 </html>
-
