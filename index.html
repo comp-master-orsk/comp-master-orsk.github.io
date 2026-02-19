@@ -392,20 +392,16 @@
             grid-template-columns: repeat(4, 1fr);
             gap: 16px;
         }
-        .price-item {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 24px;
-    transition: none;
-    cursor: default; /* убирает указатель, что это не ссылка */
-    pointer-events: none; /* отключает любые реакции на наведение */
-}
 
-.price-item h4,
-.price-item .price {
-    pointer-events: none; /* чтобы и внутри не реагировало */
-}
+        .price-item {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 24px;
+            transition: none;
+            cursor: default;
+        }
+
         .price-item h4 {
             font-size: 16px;
             font-weight: 600;
@@ -417,6 +413,17 @@
             font-size: 26px;
             font-weight: 800;
             color: var(--primary);
+        }
+
+        /* Полное отключение любых эффектов при наведении на прайс-лист */
+        .price-item:hover,
+        .price-item:focus,
+        .price-item:active {
+            background: white !important;
+            border-color: var(--border) !important;
+            box-shadow: none !important;
+            transform: none !important;
+            transition: none !important;
         }
 
         .popular-grid {
@@ -1036,4 +1043,3 @@
 
 </body>
 </html>
-
