@@ -392,15 +392,20 @@
             grid-template-columns: repeat(4, 1fr);
             gap: 16px;
         }
-
         .price-item {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 24px;
-            transition: none; /* Убираем анимацию при наведении */
-        }
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 24px;
+    transition: none;
+    cursor: default; /* убирает указатель, что это не ссылка */
+    pointer-events: none; /* отключает любые реакции на наведение */
+}
 
+.price-item h4,
+.price-item .price {
+    pointer-events: none; /* чтобы и внутри не реагировало */
+}
         .price-item h4 {
             font-size: 16px;
             font-weight: 600;
@@ -1031,3 +1036,4 @@
 
 </body>
 </html>
+
